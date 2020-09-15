@@ -1,9 +1,11 @@
 {
-    "name": "globby-compress",
-    "version": "1.0.12",
-    "description": "globby-compress",
+    "name": "module-cli-lib",
+    "version": "1.0.0",
+    "description": "module-cli-lib",
     "main": "build/index.js",
-    "bin": {"globby-compress": "./build/bin"},
+    "bin": {
+        "module-cli-lib": "./build/bin"
+    },
     "scripts": {
         "start:build": "npm run tsc && node build",
         "start": "node run",
@@ -15,9 +17,6 @@
         "lint": "tslint \"src/**/*.ts\" --fix"
     },
     "dependencies": {
-        "archiver": "^4",
-        "fs-extra": "^8",
-        "globby": "^10",
         "tslib": "^1.13.0",
         "yargs": "^15.4.1"
     },
@@ -33,12 +32,12 @@
         "typescript": "^3.9.7"
     },
     "keywords": [
-        "globby",
-        "compress",
-        "globby-compress"
+        "module-cli-lib"
     ],
     "author": "hubiqing",
-    "repository": "https://github.com/githbq/hbq-globby-compress.git",
-    "engines": {"node": ">=8"},
+    "repository": "https://github.com/githbq/hbq-module-cli-lib-boilerplate.git",
+    "engines": {
+        "node": ">=8"
+    },
     "license": "MIT"
 }
