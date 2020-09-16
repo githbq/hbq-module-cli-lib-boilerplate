@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import * as  yargs from 'yargs'
-import helloWorld from '../index'
+import { add } from '../index'
 
 
 function start() {
@@ -10,7 +10,7 @@ function start() {
         {
         },
         async (argv) => {
-            console.log(helloWorld)
+            console.log(add(1, 2))
         }).help()
     let argv = yargs.version().argv
     if (!argv._.length) {
