@@ -1,8 +1,3 @@
-/**
- * entry
- */
-(async () => {
-    console.log('hello typescript')
-})()
+import * as libs from './libs'
 
-export const add = (a, b) => a + b
+libs.run()

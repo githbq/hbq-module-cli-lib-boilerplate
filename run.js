@@ -1,4 +1,9 @@
 require('ts-node/register');
 
-require('./src/bin')
+
+process.chdir('examples')
+
+console.log('cwd:', process.cwd())
+
+require('./src')
 
